@@ -1,9 +1,9 @@
-a=input("Enter the string of your choice:")			#input string having multiple characters.
-d={}																	#dictionary declaration.
+a=input("Enter the string:")
+b={}
 for x in a:
-	if x not in d.keys():
-		d[x]=1
-	else:
-		d[x]=d[x]+1
-for k,v in d.items():
-    print("character: {} occures: {} times.".format(k,v))
+    b[x]=b.get(x,0)+1
+
+print(b)  #dictionary form
+
+for k,v in sorted(b.items()):
+    print("The number of occurances of : ",k,"is:",v)
