@@ -6,6 +6,6 @@ def geni(i):
 		yield x
 		x+=1
 
-h=geni(1000000000)
+h=geni(1000)
 for x in h:
 	print(x)
