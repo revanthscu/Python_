@@ -1,5 +1,5 @@
 
-
+#Generator function:
 def geni(i):
 	x=1
 	while (x<=i):
