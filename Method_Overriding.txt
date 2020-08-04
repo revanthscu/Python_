@@ -1,0 +1,24 @@
+class Book:
+    def __init__(self,pages):
+        self.pages=pages
+
+    #Magic methods and overriding
+    def __str__(self):
+        return str(self.pages)
+    #method overloading 
+    def __add__(self,other):
+        total=self.pages+other.pages
+        d=Book(total)
+        return d
+    def __mul__(self,other):
+        total=self.pages*other.pages
+        d=Book(total)
+        return d
+    
+    
+B1=Book(4)
+B2=Book(40)
+B3=Book(200)
+print(B1+B2+B3)
+print(B3)
+print(B1*B2*B3)
