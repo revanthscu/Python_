@@ -1,0 +1,17 @@
+class Parent:
+    def property(self):
+        print('land+cash+status')
+
+    def marry(self):
+        print('Sneha')
+
+class Child(Parent):
+    #method overrriding
+    def marry(self):
+        print('Katrina')
+    #super method
+        super().marry()
+
+a=Child()
+a.property()
+a.marry()
