@@ -1,0 +1,9 @@
+class Mat:
+    def sum(self,*a):
+        total=''
+        for x in a:
+            total=total+x
+        print(total)
+
+t=Mat()
+t.sum('SUN','SURYA','SYSTEMS')
